@@ -9,11 +9,11 @@ public class SpawnAICars : MonoBehaviour {
     public Vector3[] spawnPositions;
     public float minSpawnRaate = 2;
     public float maxSpawnRate = 12;
-    public SimpleCarSteer car;
+    public DriverController car;
     private int currentCarIDX = 0;
 	// Use this for initialization
 	void Start () {
-        car = GetComponent<SimpleCarSteer>();
+        car = GetComponent<DriverController>();
         spawnTimer = Random.Range(minSpawnRaate, maxSpawnRate);
         InvokeRepeating( "InitialSpawn",1,8);
        

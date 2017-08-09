@@ -10,7 +10,7 @@ public class VirtualJoy : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoint
     private Image joystickImg;
     private Vector3 inputVector;
 
-    private void start()
+    private void Start()
     {
         bgImg = GetComponent<Image>();
         joystickImg = transform.GetChild(0).GetComponent<Image>();
