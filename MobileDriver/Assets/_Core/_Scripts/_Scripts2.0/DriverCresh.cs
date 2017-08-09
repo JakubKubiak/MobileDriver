@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DriverCreash : MonoBehaviour
+public class DriverCresh : MonoBehaviour
 {
     public GameObject endText;
 

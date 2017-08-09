@@ -73,11 +73,11 @@ GameObject:
   - component: {fileID: 33000011967190898}
   - component: {fileID: 65000010282442358}
   - component: {fileID: 23000014202327458}
-  - component: {fileID: 114000012520461248}
   - component: {fileID: 54000012295534854}
-  - component: {fileID: 114431726461124110}
   - component: {fileID: 114559796231672664}
   - component: {fileID: 114596519717873980}
+  - component: {fileID: 114762422513632560}
+  - component: {fileID: 114329782679620602}
   m_Layer: 0
   m_Name: PlayerCar
   m_TagString: Untagged
@@ -293,7 +293,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114000012520461248
+--- !u!114 &114329782679620602
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -301,33 +301,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000014289343880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7efa3f970285674a9b178cd7012217d, type: 3}
+  m_Script: {fileID: 11500000, guid: c48c0bc825ba3994993b0848910f20bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLanes: 2
-  startLane: 2
-  lineSize: 3
-  lineChangeSpeed: 6
-  speedText: {fileID: 0}
-  m_speed: 10
-  m_speedIncreaseBy: 0.5
-  m_speedIncreaseEach: 2
-  m_maxSpeed: 100
-  upSpeed: 1.01
-  downSpeed: 0.9
-  karaHamowania: 0
---- !u!114 &114431726461124110
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014289343880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e149a22e497ca1478c061e44984b7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endText: {fileID: 0}
+  endText: {fileID: 1873229758869056, guid: f071119e2ba38c844afc281f3dfed60a, type: 2}
 --- !u!114 &114559796231672664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -361,6 +338,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   score: 0
+--- !u!114 &114762422513632560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014289343880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93f241d135dff54999832a410052ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStrips: 3
+  startStrips: 2
+  stripsSize: 3
+  stripChangeSpeed: 6
+  speedText: {fileID: 114912610795796462, guid: f071119e2ba38c844afc281f3dfed60a,
+    type: 2}
+  p_speed: 20
+  p_speedIncreaseBy: 0.4
+  p_speedIncreaseEach: 1
+  p_maxSpeed: 100
+  upSpeed: 20
+  downSpeed: 20
+  breakpenalty: 5
 --- !u!198 &198000010478970134
 ParticleSystem:
   m_ObjectHideFlags: 1
